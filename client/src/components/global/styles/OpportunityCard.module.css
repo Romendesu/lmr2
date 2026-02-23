@@ -1,0 +1,178 @@
+.card {
+  width: 100%;
+  max-width: 450px;
+  flex: 1 1 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f4f4f4;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Seccion Imagen */
+
+.card_image {
+  position: relative;
+}
+
+.card_image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge base */
+.badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Estado dinámico */
+.avaiable {
+  background-color: #0f6b4f;
+}
+
+.not_avaiable {
+  background-color: #c0392b;
+}
+
+/* Location */
+.location {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Contenido */
+
+.card_content {
+  padding: 20px;
+}
+
+.card_content h2 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sales {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #0f6b4f;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+/* Sección de precios*/
+
+.price_section {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+.price {
+  margin: 5px 0 0 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0f6b4f;
+}
+
+.arrow {
+  background: #e0e0e0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.arrow:hover {
+  background: #d5d5d5;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    flex: 1 1 250px;
+  }
+
+  .card_image img {
+    height: 180px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .location {
+    font-size: 12px;
+  }
+
+  .card_content {
+    padding: 15px;
+  }
+
+  .card_content h2 {
+    font-size: 18px;
+  }
+
+  .sales {
+    font-size: 12px;
+  }
+
+  .price_section {
+    padding: 0 15px 15px 15px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

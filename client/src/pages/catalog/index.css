@@ -1,0 +1,123 @@
+.main {
+    margin: 100px 0 0 0;  
+    min-height: 100vh;
+    background-color: #f9fafb;
+}
+
+/* SECCION INTRODUCTORIA */
+.introduction-catalog {
+    background-color: #065f46;
+    height: 25vh;  
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px; /* Alineado con los filtros */
+    padding: 0 20px;
+}
+
+.introduction-catalog h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.introduction-catalog p {
+    font-size: 18px;
+    color: #d1d5db;
+    line-height: 1.5;
+}
+
+/* CUERPO DEL CATÁLOGO (Filtros y Tarjetas) */
+.catalog-body {
+    background-color: #f9fafb;
+    padding: 0 20px 60px 20px;
+}
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: -70px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+/* CONTENEDOR DE RESULTADOS */
+.results {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: -30px;
+}
+
+/* TEXTO: "X Administraciones encontradas" */
+.results > p {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* GRID DE TARJETAS */
+.founded-administrations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    padding-bottom: 4rem;
+}
+
+/* RESPONSIVIDAD (Ajuste para tablets y móviles) */
+@media (max-width: 1024px) {
+    .founded-administrations {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .founded-administrations {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    
+    .results {
+        margin-top: 0;
+    }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .main {
+    margin: 80px 0 0 0;
+  }
+
+  .introduction-catalog {
+    height: 20vh;
+    padding: 40px 0;
+  }
+
+  .content-wrapper {
+    padding: 0 15px;
+  }
+
+  .introduction-catalog h1 {
+    font-size: 36px;
+  }
+
+  .introduction-catalog p {
+    font-size: 16px;
+  }
+
+  .catalog-body {
+    padding: 0 15px 40px 15px;
+  }
+
+  .catalog-container {
+    top: -50px;
+    gap: 15px;
+  }
+}

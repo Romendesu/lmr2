@@ -1,0 +1,150 @@
+.card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+
+  /* CLAVE ABSOLUTA */
+  isolation: isolate;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* NÚMERO DECORATIVO */
+.stepId {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+
+  font-size: 64px;
+  font-weight: 900;
+
+  color: #000000;
+  opacity: 0.08;
+
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+
+  z-index: -1;
+}
+
+/* CONTENIDO */
+.iconContainer,
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.iconContainer {
+  background-color: #065f46;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.description {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #475569;
+}
+/* HOVER GENERAL */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+  border-color: #e2e8f0;
+}
+
+/* NÚMERO DE FONDO */
+.stepId {
+  transition: 
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+/* mueve ligeramente el número */
+.card:hover .stepId {
+  transform: translate(6px, -6px);
+  opacity: 0.12;
+}
+
+/* ICONO */
+.iconContainer {
+  transition: 
+    transform 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.card:hover .iconContainer {
+  transform: scale(1.08);
+  background-color: #047857;
+}
+
+/* TEXTO */
+.title {
+  transition: color 0.3s ease;
+}
+
+.card:hover .title {
+  color: #065f46;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+    max-width: 100%;
+    min-height: 200px;
+  }
+
+  .stepId {
+    font-size: 48px;
+  }
+
+  .iconContainer {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,90 @@
+.status_card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 20px;
+  gap: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.icon_container {
+  background-color: #065f46; 
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon_img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quantity {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0c1221; /* Color casi negro de la imagen */
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 15px;
+  color: #6b7280; /* Gris azulado para el texto inferior */
+  font-weight: 400;
+}
+
+/* HOVER */
+
+.status_card:hover {
+  /* Eleva la tarjeta ligeramente */
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.status_card:hover .icon_container {
+  background-color: #054d39; /* Un verde ligeramente más oscuro */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .status_card {
+    padding: 12px 18px;
+    gap: 15px;
+  }
+
+  .icon_container {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .quantity {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}

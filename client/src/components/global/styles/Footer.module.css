@@ -1,0 +1,178 @@
+.footer {
+  background-color: #0d1b2a;
+  color: #cbd5e1;
+  padding: 60px 8% 30px 8%;
+  font-family: Arial, sans-serif;
+}
+
+/* ======= TOP SECTION ======= */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.brandSection {
+  flex: 1 1 320px;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background-color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.brandSection h2 {
+  color: white;
+  margin: 0;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 400px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #1e293b;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+  
+}
+.socialIcon img{
+    width: 40px;
+    height: 40px;
+}
+.socialIcon:hover {
+  background-color: #334155;
+}
+
+/* ======= LINKS SECTION ======= */
+
+.linksSection {
+  flex: 1 1 180px;
+}
+
+.linksSection h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linksSection li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.linksSection li:hover {
+  color: white;
+}
+
+/* ======= CONTACT SECTION ======= */
+
+.contactSection {
+  flex: 1 1 220px;
+}
+
+.contactSection h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contactSection p {
+  margin-bottom: 10px;
+}
+
+/* ======= BOTTOM SECTION ======= */
+
+.bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 25px;
+}
+
+.legalLinks span {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.legalLinks span:hover {
+  color: white;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 5% 20px 5%;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .brandSection {
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .linksSection, .contactSection {
+    text-align: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .legalLinks {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
