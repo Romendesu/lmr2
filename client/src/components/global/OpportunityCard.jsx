@@ -33,7 +33,7 @@ export default function AdministrationCard ({state, imgUrl, name, location, anua
                     <p className={styles.label}>Precio traspaso</p>
                     <p className={styles.price}>{`${price} €`}</p>
                 </div>
-                <div className={styles.arrow}>→</div>
+                <a href='/administracion'><div className={styles.arrow}>→</div></a>
             </div>
         </div>
     );

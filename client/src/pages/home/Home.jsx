@@ -40,7 +40,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="button-container">
-                    <ButtonLink name="Ver Catálogo" link="/" color="green" size="medium"/>
+                    <ButtonLink name="Ver Catálogo" link="/catalog" color="green" size="medium"/>
                     <ButtonLink name="Contáctanos" link="/" size="small" />
                 </div>
                 <div className="status-cards">

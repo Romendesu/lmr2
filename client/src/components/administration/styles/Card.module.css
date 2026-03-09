@@ -1,0 +1,39 @@
+.container {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 270px;
+}
+
+/* Fondos del card */
+.green { background-color: #F0FAF5; }
+.blue { background-color: #EFF6FF; }
+.yellow { background-color: #FFFBEB; }
+.purple { background-color: #F5F3FF; }
+
+/* Icono del card */
+.icon {
+  width: 50px;
+  height: 50px;
+  padding: 5px 10px;
+}
+
+/* Titulo y subtitulo */
+.information{
+  margin: 5px;
+  width: 100%;
+}
+.title, .subtitle {
+  margin: 0px;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
