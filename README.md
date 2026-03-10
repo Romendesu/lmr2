@@ -45,7 +45,7 @@ python -m venv venv
 
   El backend estará disponible en ```http://localhost:8000.```
 
-###Frontend (React)
+### Frontend (React)
 
 1. Entrar a la carpeta del frontend:
 ```bash
