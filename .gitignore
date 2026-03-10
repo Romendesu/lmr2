@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.env
+*.sqlite3
+*.db
+venv/
+env/
+*.egg-info/
+*.log
+
+# VSCode
+.vscode/
+
+# Node / React
+node_modules/
+build/
+dist/
+npm-debug.log
+yarn-error.log
+
+# MacOS
+.DS_Store
+
+# Archivos de configuración locales
+database.ini
